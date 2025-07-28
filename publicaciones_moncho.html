@@ -25,8 +25,8 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Publicaciones</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item active" href="publicaciones-michi.html">Artículos del Prof. Michi</a></li>
-                                <li><a class="dropdown-item" href="publicaciones-pelusa.html">Artículos de la Dra. Pelusa</a></li>
+                                <li><a class="dropdown-item active" href="publicaciones_moncho.html">Artículos del Prof. Michi</a></li>
+                                <li><a class="dropdown-item" href="publicaciones_mancha.html">Artículos de la Dra. Pelusa</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
@@ -40,14 +40,22 @@
         <h1 class="mb-4">Publicaciones del Profesor Michi</h1>
 
         <!-- Paper 1 -->
-        <div class="card mb-4">
-            <div class="card-header">Física Experimental - Octubre 2024</div>
-            <div class="card-body">
-                <h4 class="card-title">La Influencia de la Gravedad en Tazas de Café</h4>
-                <p class="card-text"><strong>Abstract:</strong> Este paper documenta una serie de experimentos replicables que demuestran la correlación directa entre la altura de una superficie y la probabilidad de que un objeto, específicamente una taza de café, inicie una trayectoria balística hacia el suelo tras un mínimo contacto felino.</p>
-                <button class="btn btn-outline-dark">Leer Paper Completo</button>
-            </div>
+<div class="card mb-4">
+    <div class="card-header">Física Experimental - Octubre 2024</div>
+    <div class="card-body">
+        <h4 class="card-title">La Influencia de la Gravedad en Tazas de Café</h4>
+        <p class="card-text"><strong>Abstract:</strong> Este paper documenta una serie de experimentos replicables que demuestran la correlación directa entre la altura de una superficie y la probabilidad de que un objeto, específicamente una taza de café, inicie una trayectoria balística hacia el suelo tras un mínimo contacto felino.</p>
+        
+        <!-- Contenido Oculto -->
+        <div class="full-paper-content" style="display: none;">
+            <hr>
+            <p><strong>Desarrollo:</strong> Los experimentos se realizaron en múltiples superficies, incluyendo mesas de comedor, estanterías y mesitas de noche. Se utilizó un modelo felino (Felis catus) altamente entrenado en el arte de la indiferencia. Los resultados indican que la fuerza aplicada por el felino es inversamente proporcional a la importancia del objeto para el humano observador.</p>
+            <p><strong>Conclusión:</strong> La gravedad no es solo una fuerza fundamental del universo, sino también una herramienta para la expresión artística y el comentario social felino.</p>
         </div>
+        
+        <button class="btn btn-outline-dark toggle-paper-btn">Leer Paper Completo</button>
+    </div>
+</div>
 
         <!-- Paper 2 -->
         <div class="card mb-4">
@@ -68,6 +76,6 @@
     <!-- Scripts de Bootstrap y jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

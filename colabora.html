@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colabora | Crónicas Felinas</title>
+    <meta name="description" content="Envía los trabajos académicos de tu mascota para que sean considerados por nuestro comité editorial.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Crónicas Felinas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="autores.html">Los Autores</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Publicaciones</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="publicaciones_moncho.html">Artículos del Prof. Michi</a></li>
+                                <li><a class="dropdown-item" href="publicaciones_mancha.html">Artículos de la Dra. Pelusa</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="colabora.html">Colabora</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h1 class="text-center mb-3">Envía una Publicación</h1>
+                <p class="lead text-center mb-5">¿Tu compañero peludo tiene una teoría revolucionaria? Comparte su trabajo con nuestra comunidad académica.</p>
+
+                <form id="paperSubmissionForm" novalidate>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="petName" class="form-label">Nombre del Académico (Mascota)</label>
+                            <input type="text" class="form-control" id="petName" required>
+                            <div class="invalid-feedback">Por favor, ingresa el nombre de tu mascota.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="petType" class="form-label">Tipo de Mascota</label>
+                            <select class="form-select" id="petType" required>
+                                <option value="" selected disabled>Selecciona una opción...</option>
+                                <option value="gato">Gato</option>
+                                <option value="perro">Perro</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <div class="invalid-feedback">Por favor, selecciona el tipo de mascota.</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3" id="otherPetTypeWrapper" style="display: none;">
+                        <label for="otherPetType" class="form-label">Por favor, especifica el tipo:</label>
+                        <input type="text" class="form-control" id="otherPetType">
+                        <div class="invalid-feedback">Por favor, especifica el tipo de mascota.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="petPhoto" class="form-label">Foto del Académico (.jpg, .png)</label>
+                        <input class="form-control" type="file" id="petPhoto" accept="image/jpeg, image/png" required>
+                        <div class="invalid-feedback">Por favor, sube una foto de tu mascota en formato JPG o PNG.</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="petSpecialty" class="form-label">Área de Especialización</label>
+                        <input type="text" class="form-control" id="petSpecialty" required placeholder="Ej: Física de Juguetes, Filosofía del Paseo...">
+                        <div class="invalid-feedback">La especialidad no puede estar en blanco.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="paperTitle" class="form-label">Título del Paper</label>
+                        <input type="text" class="form-control" id="paperTitle" required>
+                        <div class="invalid-feedback">El título del paper es obligatorio.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="paperContent" class="form-label">Contenido del Paper (Abstract)</label>
+                        <textarea class="form-control" id="paperContent" rows="6" required></textarea>
+                        <div class="invalid-feedback">El contenido del paper no puede estar vacío.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contactEmail" class="form-label">Tu Email de Contacto</label>
+                        <input type="email" class="form-control" id="contactEmail" required>
+                        <div class="invalid-feedback">Por favor, ingresa un email válido.</div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100">Enviar Paper para Revisión por Pares</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>© 2025 Crónicas Felinas. Todo el pensamiento profundo reservado.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

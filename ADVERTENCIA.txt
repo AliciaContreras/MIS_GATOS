@@ -1,0 +1,1 @@
+Este trabajo está en desarrollo, por ahora tiene código generado por windsurf genérico, pero se estará agregando la media y el contenido personalizado dentro de estos días

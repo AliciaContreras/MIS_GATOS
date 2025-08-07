@@ -1,16 +1,8 @@
-// Espera a que el documento esté completamente cargado para ejecutar el script.
 $(document).ready(function() {
-
-    // --- Lógica para el Acordeón de "Leer Paper Completo" ---
-    // Selecciona todos los botones con la clase 'toggle-paper-btn'
     $('.toggle-paper-btn').on('click', function() {
-        // Encuentra el contenido oculto que es hermano del botón
         const content = $(this).siblings('.full-paper-content');
-        
-        // Alterna la visibilidad del contenido con una animación de deslizamiento
-        content.slideToggle(400); // La animación dura 400 milisegundos
-
-        // Cambia el texto del botón para reflejar la acción actual
+       
+        content.slideToggle(400);
         if ($(this).text() === 'Leer Paper Completo') {
             $(this).text('Ocultar Paper');
         } else {
